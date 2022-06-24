@@ -1,0 +1,44 @@
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2022/03/21/13/44/background-7083244_1280.png);
+    background-repeat: no repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-center{
+    text-align: center;
+    color:rgb(54, 35, 12);
+}
+
+.form-group{
+    place-items: center;
+    font-size: 25px;
+    height: 30px;
+    padding: 5px;
+}
+
+#add, #update, #cancel {
+    background-color: rgb(96, 67, 32);
+    color: rgb(247, 235, 199);
+}
+
+.items{
+    margin-top: 270px;
+}
+
+th{
+    padding: 18px;
+    font-size: 25px;
+}
+
+td{
+    font-size: 24px;
+}
+
+table{
+    padding: 10px;
+}
+
+hr{
+   border: 1px solid #000000;
+}

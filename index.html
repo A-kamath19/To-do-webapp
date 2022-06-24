@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do Web-App</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <h1 class="text-center">TO DO LIST</h1>
+        <form onsubmit="return false;">
+          <div class="form-group">
+            <label >Title :</label>
+            <input type="text" class="form-control" id="task"  aria-describedby="emailHelp" placeholder="Add task to List"><br>
+            <label >Description :</label>
+            <input type="text" class="form-control" id="description"  aria-describedby="emailHelp" placeholder="Add task description"><br>
+            <button  id="add" class="btn" onclick="return postData()">Add to List</button> 
+            <a href="index.html" id="cancel" class="btn">Cancel</a>       
+          </div>
+        </form>
+        
+
+        <div class="items">
+            <h2 class="text-center">Pending Tasks</h2>
+            <hr>
+            <table class="table table-striped table-hover text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Task</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Action</th> 
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+            <br><br>
+            <h2 class="text-center">Completed Tasks</h2>
+            <hr>
+            <table class="table table-striped table-hover text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Task</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Action</th> 
+                  </tr>
+                </thead>
+                <tbody id="tableBody2">
+                  
+                </tbody>
+            </table>
+        </div>     
+    </div><br><br><br><br><br>
+    
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+          <span class="text" style="font-size: 20px;">Made By Apeksha </span>
+        </div>
+    </footer>
+</body>
+<script>
+  getData();
+</script>
+</html>
