@@ -1,5 +1,4 @@
-const dotenv = require("dotenv")
-const api_url = process.env.HER_URL
+const api_url = "https://stintlist.herokuapp.com/user";
 
 function loadData(records = []) {
 	var table_data = "";
